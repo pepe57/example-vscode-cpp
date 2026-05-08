@@ -13,7 +13,15 @@ If not using devcontainers, then:
 If testing is desired, just update CMakeLists and make `BUILD_TESTING` to `ON`.
 If external fmt library is desired, just update CMakeLists and make `USE_EXTERNAL_FMT` to `ON`.
 
-## Using cxxbuild project
+## Recommended setup for VSCode
+
+- Do NOT use devcontainers (install clang compiler, cmake and ninja locally)
+- Use CMake 4.1 or 4.3 or latest (and update key on CMakeLists.txt accordingly)
+- Use ninja (not make)
+- Install extension clangd for vscode (and disable Microsoft C++ extension)
+- Use Clang instead of GCC on CMakeLists.txt (see presentation on how to do it)
+
+## Using cxxbuild project (for legacy 'tutorial-antigo-gcc-13')
 
 The easiest way to build this is to just use [cxxbuild project](https://github.com/manydeps/cxxbuild):
 
